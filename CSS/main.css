@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+body
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+                                        /* Partie HEADER */
+header
+{
+    display: grid;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header a
+{
+    text-decoration: none;
+}
+
+.logo
+{
+    padding: 0 3rem;
+    height: 2.800rem;
+}
+
+header nav
+{
+    display: flex;
+    align-items: center;
+    grid-area: headernav;
+}
+
+.lien_ancre
+{
+    padding: 2rem;
+    font-weight: 500;
+    text-align: center;
+    border-top: 2px transparent solid;
+    border-bottom: 2px transparent solid;
+}
+
+.lien_ancre[data-active=true]
+{
+    color: #0065FC;
+}
+
+.lien_ancre:hover
+{
+    color: 0065FC;
+}
+
+.lien_inscrip
+{
+    display: flex;
+    align-items: center;
+    grid-area: button;
+    padding: 2rem;
+    color: #0065fc;
+    font-weight: 600;
+}
+/* FIN HEADER */
+
+                                        /* Corps principal de la page (main) */ 
+main /* équivalent petit body */
+{
+    margin:auto;
+    padding: 0 2rem;
+    max-width: 1440px; /* taille max écran */
+    box-sizing: border-box;
+}
+
+                            /* Barre de recherche et filtres */
+                /* Description recherche */
+
+.description_recherche h1
+{
+    margin-bottom: 1rem;
+}
+
+.description_recherche p
+{
+    margin-top: 0;
+}
+/* fin description recherche */
+
+            /* Barre de recherche */
+.barre
+ {
+    overflow: auto;
+    display: inline-flex;
+    max-width: 100%;
+ }
+
+.icone_map
+{
+    text-align: center;
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem 1.2rem;
+    background-color: #f2f2f2;
+}
+
+.icone_map i
+{
+    margin-left: 0.2rem;
+}
+
+.recherche_ville
+{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+}
+
+.valide_recherche
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+}
+/* FIN Barre de recherche */
+
+            /* début FILTRES  */
+
+.filtres 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.filtre_bouton p 
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+            
+.filtres, .contenu_filtre 
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+            
+.filtres .titre 
+{
+    margin-bottom: 20px;
+    padding-top: inherit;
+    padding-right: 20px;
+}
+            
+.filtres .filtre_bouton 
+{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 200px;
+    border: 2px #F2F2F2 solid;
+    height: 50px;
+    position: relative;
+    padding-left: 55px;
+    padding-right: 14px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    transition: transform .1s;
+}
+            
+.filtres .filtre_bouton:hover 
+{
+    transform: scale(1.015);
+}
+            
+.filtres .filtre_bouton:first-child 
+{
+    margin-left: 0;
+}
+            
+.filtres .filtre_bouton:last-child 
+{
+    margin-right: 0;
+}
+            
+.filtres .filtre_bouton i 
+{
+    line-height: 50px;
+    color: #0065FC;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+    border-radius: 100%;
+}
+            
+.filtre_bouton p 
+{
+    margin: auto;
+}
+
+.info_resa 
+{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+}
+
+
+.info_resa i
+{
+    color: #0065FC;
+    padding-right: 0.5rem;
+}
+
+.info_resa p 
+{
+    margin: 0;
+}
+
+/* Division hébergements et tendance */
+
+
+/* hebergements */
+
+.hebergement_et_tendance 
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hebergement_et_tendance a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hebergement_et_tendance a:hover
+{
+    text-decoration: underline;
+}
+
+.hebergements_simple 
+{
+    order: 1;
+    flex: 1;
+    margin-right: 3%;
+}
+
+.fondgris 
+{
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px 25px;
+    min-height: 519px;
+    margin-bottom: 20px;
+}
+
+.icone_note 
+{
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+figure:hover 
+{
+    transform: scale(1.015);
+}
+
+/* Partie tendance */
+
+.division_tendance 
+{
+    order: 2;
+    flex: 0 1 35%;
+}
+
+.carte_heber 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+
+.carte_heber figure 
+{
+    width: calc(100% / 3.3); /* calc */
+    background: #FFF;
+    padding: 0.3rem;
+    border-radius: 1.25rem;
+    margin: 0 0 30px 0;
+    box-shadow: 0px 0px 10px #55555538;
+    transition: transform .2s;
+}
+
+.carte_heber figure figcaption 
+{
+    padding: 10px;
+    position: relative;
+}
+
+.carte_heber figure figcaption p 
+{
+    margin: 0;
+}
+
+.carte_heber figure figcaption p:first-child 
+{
+    font-size: 14px;
+}
+
+.carte_heber figure figcaption p:nth-child(2) 
+{
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.carte_heber figure figcaption i 
+{
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.carte_heber figure img 
+{
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.division_tendance .carte_heber 
+{
+    flex-direction: column;
+}
+
+.division_tendance .carte_heber figure 
+{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.division_tendance .carte_heber figure img 
+{
+    max-width: 100px;
+    max-height: initial;
+    height: 115px;
+    border-radius: 20px 0 0 20px;
+}
+
+#hebergement h2, .stonk 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement h2 i 
+{
+    margin: auto 0;
+}
+
+
+/* Activités */
+
+.activites
+{
+    display: grid;
+    column-gap: 2rem;
+    margin: 4rem 0;
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.activites a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.activites a:hover
+{
+    text-decoration: underline;
+}
+
+.nom_section 
+{
+    grid-column: 1/-1;
+}
+
+.choix_activites 
+{ 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.choix_activites:hover 
+{
+    transform: scale(1.015);
+}
+
+.GRID_activ 
+{
+    position: relative;
+    flex: 1;
+}
+
+.GRID_image_activites 
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.nom_activites 
+{
+    margin: 1.2rem 1.5rem;
+}
+
+  
+/* FIN activités */
+
+
+/* Fin corps principal de la page (main) */
+
+                                        /* Footer */
+
+/* footer */
+
+footer 
+{
+    background-color: #F2F2F2;
+    bottom: 0;
+    border-top: 0;
+    justify-content: space-around;
+    display: flex;
+}
+
+.bloc-footer 
+{
+    padding: 20px;
+    width: 100%;
+    padding-left: 10%;
+}
+
+ul.liste 
+{
+    color: #464646;
+    padding: 0;
+    line-height: 2rem;
+    list-style: none;
+}
+
+#footer .bloc-footer .liste 
+{
+    flex-shrink: 1;
+    list-style: none;
+}
+
+footer a 
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
