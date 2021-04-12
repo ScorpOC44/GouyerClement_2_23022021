@@ -1,3 +1,3 @@
-# GouyerClement_2_23022021
+Site hébergé sur GitHub :  https://scorpoc44.github.io/GouyerClement_2_23022021/
 
-Ajouter une description du projet
+Projet 2 de la formation OpenClassrooms "Développeur Web" par Gouyer Clément.
