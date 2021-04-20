@@ -57,15 +57,9 @@ header nav {
 
 /* FIN HEADER */
 
-
-/* Corps principal de la page (main) */
-
-main
-/* équivalent petit body */
-
-{
+.marge {
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     max-width: 1440px;
     /* taille max écran */
     box-sizing: border-box;
@@ -251,6 +245,14 @@ main
     margin-bottom: 20px;
 }
 
+.fondgris1 {
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px 25px;
+    min-height: 519px;
+    margin-bottom: 20px
+}
+
 .icone_note {
     margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
@@ -351,7 +353,6 @@ figure:hover {
     display: grid;
     column-gap: 2rem;
     margin: 4rem 0;
-    background-color: #f2f2f2;
     border-radius: 1.5rem;
     padding: 2rem;
     margin-top: 1.5rem;
